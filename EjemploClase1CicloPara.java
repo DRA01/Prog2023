@@ -1,4 +1,4 @@
-public class EjemploClase6CicloPara {
+public class Ejemplo6 {
     public static void main(String [] args){
         int vector[] = new int[3];
         int acumulador = 0;

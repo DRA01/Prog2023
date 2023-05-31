@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 
 
-public class EjemploClase3 {
+public class Ejemplo3 {
  
     public static void main (String[] args){
         boolean flag = true;
         int numeroIngresado;
         int acumulador = 0;
 
-        do{
+        do(
             System.out.print("Ingrese numero");
             numeroIngresado = Integer.parseInt(System.console().readLine());
             acumulador = acumulador + numeroIngresado;
@@ -21,12 +21,9 @@ public class EjemploClase3 {
                 
                 System.out.println("Flag cambiado");
                 flag = false;
-            }
         }
         while(flag);
         System.out.println(acumulador);
     }
-    }
-    
 
-
+}
