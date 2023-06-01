@@ -1,4 +1,4 @@
-public class EjemploClase8 {
+public class EjemploClase8Ejercicio1 {
     
     public static void main(String[] args){
         int[] array = {-2, 45 ,0, 11, -9};

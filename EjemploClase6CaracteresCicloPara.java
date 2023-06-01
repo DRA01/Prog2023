@@ -1,4 +1,4 @@
-public class Ejemplo6Clase {
+public class EjemploClase6CaracteresCicloPara {
     public static void main(String[] args ){
         char[] caracter = new char[4];
         caracter[0] = 'H';

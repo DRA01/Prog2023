@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 
-public class Ejemplo3 {
+public class EjemploClase3 {
  
     public static void main (String[] args){
         boolean flag = true;
@@ -10,7 +10,7 @@ public class Ejemplo3 {
         int acumulador = 0;
 
         do(
-            System.out.print("Ingrese numero");
+            System.out.println("Ingrese numero");
             numeroIngresado = Integer.parseInt(System.console().readLine());
             acumulador = acumulador + numeroIngresado;
             

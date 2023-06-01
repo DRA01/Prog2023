@@ -1,4 +1,4 @@
-public class Clase7FuncionMathRandom {
+public class EjemploClase7FuncionMathRandom {
     public static void main(String[] args){
         int[] vectorRandom = new int[50];
         //double rand = Math.random();
