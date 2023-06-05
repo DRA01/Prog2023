@@ -18,6 +18,6 @@ public class EjemploClase1  {
         }else{
             System.out.println(num1 + " es igual a " + num2);
         }
-    }    
+        }    
     }
 }

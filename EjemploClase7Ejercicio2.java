@@ -1,6 +1,9 @@
-public class EjemploClase7Ejercicio1 {
+public class EjemploClase7Ejercicio2 {
     public static void main(String[] args){
         int i;
+        int[] array = new int[11];
+        int n = array.length;
+        int tmp;
         int vectorTemp[] = new int[12];
         int vectorHum[] = new int[12];
         int acumuladorTemp = 0;
@@ -11,7 +14,7 @@ public class EjemploClase7Ejercicio1 {
         int acumuladorTemp1 = acumuladorTemp / 12;
         int temProm1 = (int) (acumuladorTemp1 - temProm);
         int temProm2 = (int) (temProm - acumuladorTemp1);
-        for(i = 0; i < 12; i ++){
+        for(i = 0; i < 11; i ++){
             System.out.println("Ingrese promedio de temperatura del mes ");
             vectorTemp[i] =Integer.parseInt(System.console().readLine());
             acumuladorTemp = acumuladorTemp + vectorTemp[i];
@@ -37,6 +40,46 @@ public class EjemploClase7Ejercicio1 {
         }
         System.out.println("\033[35mel promedio de humedad en el mes mas seco es: " + numMenor);
         System.out.println("el promedio de temperatura en el mes mas caluroso es: " + numMayor);
+
+       
+      
+        System.out.println("Humedad desordenada");
+        for(i = 0; i < n; i ++){
+            System.out.println(vectorHum[i] + " " );
+        }
+        for(i = 0; i < n; i ++){
+            for(int j = 0; j < n - i - 1 ; j ++){
+                if (vectorHum[j] > vectorHum[j + 1]){
+                    tmp = vectorHum[j];
+                    vectorHum[j] = vectorHum[j + 1];
+                    vectorHum[j + 1] = tmp;
+                }
+                
+            }
+        }
+        System.out.println("Humedad ordenada");
+        for( i = 0; i < n; i ++){
+            System.out.println(vectorHum[i] + " " );
+        }
+
+        System.out.println("Temperatura desordenada");
+        for(i = 0; i < n; i ++){
+            System.out.println(vectorTemp[i] + " " );
+        }
+        for(i = 0; i < n; i ++){
+            for(int j = 0; j < n - i - 1 ; j ++){
+                if (vectorTemp[j] > vectorTemp[j + 1]){
+                    tmp = vectorTemp[j];
+                    vectorTemp[j] = vectorTemp[j + 1];
+                    vectorTemp[j + 1] = tmp;
+                }
+                
+            }
+        }
+        System.out.println("Temperatura ordenada");
+        for( i = 0; i < n; i ++){
+            System.out.println(vectorTemp[i] + " " );
+        }
     }
 }
 // un grupo de cienticificos esta realizando un estudio del clima en bariloche durante el año 2020.
