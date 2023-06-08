@@ -10,9 +10,9 @@ public class EjemploClase10Repaso5 {
         double lado3;
 
         System.out.println("Ingrese los tres valores de los lados del triangulo");
-        lado1 = Integer.parseInt(System.console().readLine());
-        lado2 = Integer.parseInt(System.console().readLine());
-        lado3 = Integer.parseInt(System.console().readLine());
+        lado1 = Double.parseDouble(System.console().readLine());
+        lado2 = Double.parseDouble(System.console().readLine());
+        lado3 = Double.parseDouble(System.console().readLine());
         if((lado1 == lado2) & (lado2 == lado3) & (lado1 == lado3)){
             System.out.println("Sus 3 lados son iguales, esto es un triangulo equilatero");
         }else if ((lado1 == lado2) || (lado2 == lado3) || (lado1 == lado3)) {
