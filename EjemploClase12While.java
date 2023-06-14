@@ -1,4 +1,4 @@
-public class EjemploClase12{
+public class EjemploClase12While{
     public static void main (String[] args){
         int op;
 
