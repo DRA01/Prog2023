@@ -2,9 +2,9 @@
     Creamos base de datos para el curso de Programacion */
 
 
-CREATE DATABASE rodados; /*CREATE TABLE (nombre de la base de datos(sin el parentesis));*/
+CREATE DATABASE rodados; /*CREATE TABLE (nombre de la base de datos(sin el parentesis))*/
 USE rodados; /*cmd para usar la base de datos que creamos*/
-CREATE TABLE vehiculos /*cmd que crea la tabla en minusculas el nombre de la tabla*/
+CREATE TABLE vehiculos /*cmd que crea la tabla (en minusculas el nombre de la tabla)*/
     (marca varchar(10), /*campo de la tabla*/
     modelo varchar(10), /*campo de la tabla*/
     patente varchar(6), /*campo de la tabla*/
@@ -50,3 +50,35 @@ INSERT INTO motos (cilindrada, patente) /* cmd para insertar registros a los cam
 
 
 SELECT * FROM vehiculos; /*Muestra todos los registros insertados en nuestra tabla vehiculos*/ 
+
+
+/* 04-10-23 */
+
+CREATE DATABASE plantel;
+USE plantel;
+
+CREATE TABLE jugadores 
+    (nombre varchar(30),
+    posicion varchar(15),
+    altura int,
+    velocidad float,
+    fuerza int,
+    sueldo int);
+
+
+INSERT INTO jugadores (sueldo, nombre, altura, posicion, velocidad, fuerza)
+    VALUES
+        (14000, 'Neuer', 192, 'arquero', 2, 8),
+        (30000, 'Beckembauer', 190, 'defensor', 5, 10),
+        (13000, 'Roberto Carlos', 171, 'defensor', 8, 10),
+        (6000, 'Modric', 172, 'mediocampista', 5, 6),
+        (2000, 'Pirlo', 175, 'mediocampista', 4, 7),
+        (10000, 'Pele', 170, 'delantero', 5, 7),
+        (50000, 'Maradona', 180, 'delantero', 7, 7);
+        
+INSERT INTO jugadores (nombre)
+    VALUES
+        UPDATE jugadores SET nombre = 'Beckenbauer'WHERE altura = 190 ;
+
+        
+        
